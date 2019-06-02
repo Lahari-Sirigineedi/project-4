@@ -1,0 +1,542 @@
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<script>
+	//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+	</script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand page-scroll" href="#page-top">LAHARI SIRIGINEEDI &nbsp &nbsp|</a>
+               <a class="navbar-brand page-scroll" href="#page-top">Front End Developer</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav nav-menu navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll" href="#page-top">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+					 <li>
+                        <a class="page-scroll" href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">My Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://cdn.wallpapersafari.com/62/79/5l62nq.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.wallpapersafari.com/62/79/5l62nq.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="https://cdn.wallpapersafari.com/62/79/5l62nq.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </section>
+
+
+    <nav class="navbar navbar-fixed-top navbar-bg" role="navigation">
+      <ul class="nav navbar-nav nav-bullets">
+        <li>
+          <a class="page-scroll" href="#page-top"><i class="fa fa-circle"></i></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about"><i class="fa fa-circle"></i></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#experience"><i class="fa fa-circle"></i></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#projects"><i class="fa fa-circle"></i></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#contact"><i class="fa fa-circle"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 style = "margin-top:40px;font-size:26px;color:Gray;">ABOUT ME</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <img src="img.jpg" alt="" class="image-cover" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <p class="about_s" style="margin-left:-75px;">
+              I'm Lahari, aspiring Frontend web developer, my websites are primarily hand-coded using HTML5, CSS3, & JavaScript.
+              With a strong emphasis on "Progressive Enhancement", I look for creative ways to push the boundaries
+              of website front-end code without compromising the performance.
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Progress Box -->
+    <div class="pb">
+      <h6 style="margin:100px 373px 0px 474px;font-size:16px">HTML5<h6>
+      <div class="progress" style="margin: -4px 0px 21px 473px;width: 768px;">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+      </div>
+      <br/>
+      <h6 style="margin: -17px 473px 0px 474px;font-size:16px">CSS3<h6>
+        <div class="progress" style= "margin: -4px 0px 21px 473px;width: 768px">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">85%</div>
+        </div>
+        <br/>
+        <h6 style="margin: -12px 473px 0px 474px;font-size:16px">JavaScript<h6>
+          <div class="progress" style="margin: -4px 0px 21px 473px;width: 768px">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div><br/>
+          <h6 style="margin: -10px 473px 0px 474px;font-size:16px">JQuery<h6>
+            <div class="progress" style="margin: -4px 0px 21px 473px;width: 768px">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+  <!-- Progress Box End-->
+
+<!-- Experience -->
+ <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 style="font-size:26px;color:Gray;">EXPERIENCE</h1>
+                </div>
+            </div>
+            <br/>
+			<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			 <img src="capture5.jpg" alt="" class="image--cover" />
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-9 col-xs-9">
+			<h5 style="font-size:20px;text-align: center;color:Lightblack;">2016 - Present &nbsp &nbsp Working in Accenture Private Limited.</h5>
+
+			<p class="about_s" style="color:Black;">
+			Associated with Accenture Solutions Pvt. Ltd as a Business Process New Associate for the role QA for the project of Fast Track from 12-Aug-2016 to till date.
+
+			</div>
+			</div>
+        </div>
+    </section>
+
+<!-- Experience End-->
+
+    <!-- Projects  -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 style="font-size:26px;color:Gray;">PROJECTS</h1>
+                </div>
+            </div>
+<br/>
+<br/><br/><br/><br/><br/>
+<div class="row">
+   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <div class="content">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="Capture1.JPG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title" style="color:#000000;font-size:21px;">BMI Calculator</h3>
+        <p class="content-text" style="color:#3300CC;font-size:17px;">Body Mass Index is approximately calculated using height & weight.</p>
+        <a href="https://lahari-sirigineedi.github.io/BMI-Calculator/" target="_blank" style="font-size:21px;color:#2F4F4F;">Visit Project</a>
+      </div>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+  <div class="content">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="Capture2.JPG">
+      <div class="content-details fadeIn-top">
+        <h3 class="content-title" style="color:#000000;font-size:21px;">Araku Valley</h3>
+        <p class="content-text" style="color:#3300CC;font-size:17px;">Single Page Layout about Araku Valley</p>
+        <a href="https://lahari-sirigineedi.github.io/project-1/" target="_blank" style="font-size:21px;color:#2F4F4F;">Visit Project</a>
+      </div>
+  </div>
+</div>
+ <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <div class="content">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="Capture4.JPG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title" style="color:#000000;font-size:21px;">Coin Collector</h3>
+        <p class="content-text" style="color:#3300CC;font-size:17px;">Coin collecor game created using Javascript and HTML5.</p>
+        <a href="https://lahari-sirigineedi.github.io/coin-game/" target="_blank" style="font-size:21px;color:#2F4F4F;">Visit Project</a>
+      </div>
+  </div>
+  </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Projects End -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 style="font-size:26px;color:Gray;">CONTACT ME</h1>
+                    <br/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <a class="fa fa-linkedin-square" style="font-size:24px;margin:0px 0 0 -10px;color:#357d86;" href="https://www.linkedin.com/in/lahari-sirigineedi-a4992917a/" target="-blank"></a>
+  <a class="fa fa-instagram" style="font-size:24px;margin:0px 0 0 10px;color:#357d86;" href="https://www.instagram.com/lahari_sirigineedi/" target="-blank"></a>
+  <a class="fa fa-github" style="font-size:24px;margin:0px 0 0 11px;color:#357d86;" href="https://github.com/Lahari-Sirigineedi" target="-blank"></a>
+  <br/>
+  <p style ="margin: 10px 0 0 75px;color:#737373;">Feel free to contact me @ <em>lsirigineedi@gmail.com</em>. Let's make something special.</p>
+  <br/>
+  <p style = "margin: 12px 0 200px 25px;color:hsl(0, 0%, 0%);">© <strong>Sirigineedi Lahari-Coded by me</strong></p>
+</div>
+                </div>
+            </div>
+    </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
+
+</body>
+
+
+
+<style>
+
+.about_s{
+margin-top: 6%;
+font-size:16px;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+.wrapper {
+  padding: 100px;
+}
+
+.image-cover {
+  width: 300px;
+  height: 420px;
+  border-radius: 50%;
+  margin: -20px 0 0 -150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center left;
+     object-position: center left;
+}
+.image--cover {
+  width:300px;
+  height: 299px;
+  margin-left: -70px;
+  margin-top: -55px;
+}
+
+
+.pb {
+  margin: -400px 0px 21px -43px;
+}
+
+
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  margin-top:-50px;
+}
+
+.content .content-overlay {
+  background-color:#D3D3D3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+/* .content-title {
+ text-color:#000000;
+} */
+.content-image{
+  width: 100%;
+  border:2px solid black;
+  height:50%;
+
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+
+
+
+
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+	font-family: 'Poppins';
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.active a {
+  border-bottom: 4px solid #fff;
+}
+.nav-bullets > li {
+  float: none;
+}
+.nav-bullets .active a {
+  border-bottom: 0px;
+}
+
+.navbar-default .nav-bullets li a {
+  color: #41825e
+}
+.nav-bullets a:hover,.nav-bullets .active a {
+  background: none!important;
+}
+.nav.nav-bullets {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+.navbar-bg .navbar-nav > li > a, .navbar-default .navbar-brand {
+  color:#999;
+}
+.navbar-bg {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none ;
+  margin: 0 ;
+  min-height: 0 ;
+  padding: 0 ;
+  position: absolute;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #fff;
+}
+.navbar-bg .navbar-nav > .active > a, .navbar-bg .navbar-nav > .active > a:focus, .navbar-bg .navbar-nav > .active > a:hover {
+  background: none;
+  color: #41825e;
+}
+.navbar {
+  padding: 0px 0 0 0;
+}
+.top-nav-collapse {
+  padding: 0;
+}
+.navbar-default {
+  background: #357d86;
+}
+.navbar-default .navbar-nav > li > a,.navbar-default .navbar-brand  {
+  color: #fff;
+}
+.intro-section {
+    height: 100%;
+    padding-top: 0px;
+
+    background: #fff;
+}
+.about-section {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #eee;
+}
+.experience-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+.projects-section {
+  height: 100%;
+  padding-top: 190px;
+  text-align: center;
+  margin-top:-266px;
+}
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+
+/*================== responsive css ==================*/
+@media(min-width:767px) {
+    .navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+    .nav.nav-bullets {
+      right: 20px;
+    }
+}
+@media(max-width:767px) {
+    .nav.nav-bullets {
+      right: 20px;
+    }
+}
+</style>
